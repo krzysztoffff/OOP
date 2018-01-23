@@ -1,8 +1,6 @@
-<img alt="Logo" src="http://coderslab.pl/svg/logo-coderslab.svg" width="400">
 
 # Konstruktor - zadania.
 
-#### Zadanie 1 – rozwiązywane z wykładowcą.
 
 Utwórz klasę `Burger` dodaj w niej atrybuty:
 
@@ -12,7 +10,6 @@ Utwórz klasę `Burger` dodaj w niej atrybuty:
 1. Utwórz konstruktor, który przyjmie i ustawi parametry `size`, `price` .
 2. Utwórz konstruktor bezargumentowy.
 
------------------------------------------------------------------------------
 
 #### Zadanie 2.
 

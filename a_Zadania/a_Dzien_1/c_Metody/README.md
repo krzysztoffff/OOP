@@ -1,9 +1,7 @@
-<img alt="Logo" src="http://coderslab.pl/svg/logo-coderslab.svg" width="400">
 
 # Metody - zadania.
 
 
-#### Zadanie 1 – rozwiązywane z wykładowcą.
 
 Utwórz klasę `Product` dodaj w niej atrybut:
 
@@ -11,7 +9,6 @@ Utwórz klasę `Product` dodaj w niej atrybut:
 
 Dodaj metody `setName` (ustawiającą `name`)  oraz `getName` (zwracającą `name`).
 
------------------------------------------------------------------------------
 
 #### Zadanie 2.
 

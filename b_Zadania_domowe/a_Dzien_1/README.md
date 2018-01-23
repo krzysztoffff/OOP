@@ -1,18 +1,7 @@
-<img alt="Logo" src="http://coderslab.pl/svg/logo-coderslab.svg" width="400">
 
 # Programowanie obiektowe w Javie - praca domowa.
 
-> Kilka ważnych informacji
 
-Przed przystąpieniem do rozwiązywania zadań przeczytaj poniższe wskazówki
-
-## Jak zacząć?
-
-1. Stwórz [*fork*][forking] repozytorium z zadaniami.
-2. [*Sklonuj*][ref-clone] repozytorium na swój komputer.
-3. Rozwiąż zadania i [*skomituj*][ref-commit] zmiany do swojego repozytorium.
-4. [*Wypchnij*][ref-push] zmiany do swojego repozytorium na GitHubie.
-5. Stwórz [*pull request*][pull-request] do oryginalnego repozytorium, gdy skończysz wszystkie zadania.
 
 
 #### Zadanie 1.

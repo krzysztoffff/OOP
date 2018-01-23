@@ -8,10 +8,10 @@ public class Main1 {
 		Attribute attr = new Attribute();
 		System.out.println("Odpalam program");
 		System.out.println(attr.publicAttribute);
-		System.out.println(attr.protectedAttribute);//do protected mamy bo jeteÅ›my w tym samym pakiecie
-	//	System.out.println(attr.privateAttribute);  nie da siÄ™ bo jest private
+		System.out.println(attr.protectedAttribute);//do protected mamy bo jeteœmy w tym samym pakiecie
+	//	System.out.println(attr.privateAttribute);  nie da siê bo jest private
 		
-		attr.display();//w ten sposÃ³b odpalam funkcjÄ™ display ktÃ³ra wyÅ›wietla prywatny atrybut
+		attr.display();//w ten sposób odpalam funkcjê display która wyœwietla prywatny atrybut
 		
 		
 		

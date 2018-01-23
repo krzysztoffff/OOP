@@ -1,4 +1,4 @@
-package a_Zadania.a_Dzien_1.a_Pierwsza_klasa; //każda klasa musi być w jakimś pakiecie
+package pierwsza_klasa; 
 
 public class Cat {
 

@@ -1,8 +1,6 @@
-<img alt="Logo" src="http://coderslab.pl/svg/logo-coderslab.svg" width="400">
 
 # Zaawansowana obiektowość - Zadania.
 
-#### Zadanie 1 - zadanie rozwiązywane z wykładowcą
 Do klasy ```AdvancedCalculator``` dopisz:
 
  1. Stałą  ```PI```, która będzie miała przypisaną wartość **3.14159265**.
@@ -10,7 +8,6 @@ Do klasy ```AdvancedCalculator``` dopisz:
  3. Statyczną tablicę, która będzie przechowywała historię operacji wykonanych na wszystkich kalkulatorach.
  4. Statyczną metodę `printGlobalOperations()`, która będzie wyświetlać wszystkie operacje ze wszystkich obiektów klasy `Calculator`.
 
------------------------------------------------------------------------------
 
 #### Zadanie 2.
 Do klasy ```AdvancedCalculator``` dopisz:
