@@ -6,14 +6,18 @@ import java.util.List;
 
 public class Calculator {
 
-	// private String [] operationTab = new String [0];
-	private List<String> history = new ArrayList<>(); // obiekt tablica
-														// dynamiczna
+	// private String [] operationTab = new String [0]; // trzeba zdefiniowaæ
+	// rozmiar tablicy co czyni tablicê z³ym rozwi¹zaniem
 
+	private List<String> history = new ArrayList<>(); // obiekt tablica dynamiczna
 	static List<String> statHistory = new ArrayList<>();
 
+	public Calculator() {
+
+	}
+
 	public void sAddHistory(String str) {
-		this.statHistory.add(str);
+		statHistory.add(str);
 	}
 
 	private void addHistory(String str) {
@@ -21,13 +25,13 @@ public class Calculator {
 	}
 
 	public double pow(double num1, double num2) {
-		double result = Math.pow(num1, num2); // potÄ™ga
-		addHistory(Double.toString(num1) + " do potÄ™gi " + Double.toString(num2) + " = " + Double.toString(result));
+		double result = Math.pow(num1, num2); // potêga
+		addHistory(Double.toString(num1) + " do potêgi " + Double.toString(num2) + " = " + Double.toString(result));
 		return result;
 	}
 
 	public double root(double num1, double num2) {
-		double result = Math.pow(num1, 1 / num2); // pierwiastek n tego stopnia.
+		double result = Math.pow(num1, 1 / num2); // pierwiastek num2 stopnia z num1.
 													// pierwiastek drugiego
 													// stopnia to sqrt
 		addHistory("pierwiastek z " + Double.toString(num1) + " " + Double.toString(num2) + " stopnia = "
@@ -36,28 +40,21 @@ public class Calculator {
 
 	}
 
-	public void printOperations() {// wyÅ›wietliÄ‡ tablice
+	public void printOperations() {// wyœwietlia tablice
 		for (int i = 0; i < history.size(); i++) {
 
 			System.out.println(this.history.get(i));
 
 		}
-		
-		
-		
 
 	}
-	
-	
-	public void sPrintOperations() {// wyÅ›wietliÄ‡ tablice
+
+	public void sPrintOperations() {// wyœwietlia tablice
 		for (int i = 0; i < statHistory.size(); i++) {
 
-			System.out.println(this.statHistory.get(i));
+			System.out.println(statHistory.get(i));
 
 		}
-		
-		
-		
 
 	}
 
@@ -74,7 +71,6 @@ public class Calculator {
 		}
 
 	}
-
 	public static void printGlobalOperations(String length) {
 
 		try {
@@ -90,15 +86,14 @@ public class Calculator {
 		// this.history.removeAll(history);
 
 	}
-	
+
 	public void sClearList() {
 		this.statHistory.clear();
 		// this.history.removeAll(history);
 
 	}
 
-	// wyczyÅ›ciÄ‡ tablice operacja ktÃ³ra metoda ma speckalna operacje do
-	// czyszczeia
+	// wyczyœciæ tablice operacja która metoda ma specjaln¹ operacje do czyszczenia
 
 	public double add(double num1, double num2) {
 		double result = num1 + num2;

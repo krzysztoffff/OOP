@@ -4,7 +4,7 @@ public class BurgerTest {
 	
 	public static void main(String[] args) {
 		
-		Burger burger = new Burger("medium", 15.99); //zamienione na flouta z domyślnego duble dopisać f
+		Burger burger = new Burger("medium", 15.99); 
 		
 		System.out.println(burger.getSize());
 		

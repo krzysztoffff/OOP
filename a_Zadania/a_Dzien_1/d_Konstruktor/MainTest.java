@@ -20,10 +20,11 @@ public class MainTest {
 		
 		calc.clearList();
 		
-		System.out.println("\n\nraz jeszcze wyÅ›wietlam listÄ™ po wyczyszczeniu");
+		System.out.println("\n\nraz jeszcze wyœwietlam listê po wyczyszczeniu");
 		calc.printOperations();
 		
 		
 	}
 
 }
+
