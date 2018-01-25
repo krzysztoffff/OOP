@@ -7,7 +7,7 @@ public class AdvancedCalculator extends Calculator{
 
 	public AdvancedCalculator(){
 		
-		super(); //metodki pow i num sÄ… w a_Zadania.a_Dzien_1.d_Konstruktor.Calculator;
+		super();    //metodki pow i num s¹ w a_Zadania.a_Dzien_1.d_Konstruktor.Calculator;
 	
 	}
 

@@ -88,7 +88,7 @@ public class Calculator {
 	}
 
 	public void sClearList() {
-		this.statHistory.clear();
+		statHistory.clear();
 		// this.history.removeAll(history);
 
 	}
