@@ -27,7 +27,7 @@ public class Shape extends Calculator{
 	public String getDiscription(){
 		
 		
-		String result = "WspÃ³Å‚rzÄ™dne Å›rodka ksztaÅ‚tu: x = "+Double.toString(this.x)+" y = "+Double.toString(this.y)+" Kolor: "+color;
+		String result = "Wspó³rzêdne œrodka kszta³tu: x = "+Double.toString(this.x)+" y = "+Double.toString(this.y)+" Kolor: "+color;
 		
 		System.out.println(result);
 		return result;
@@ -43,6 +43,8 @@ public class Shape extends Calculator{
 		
 		double a = x2 - x1; //to do kwadratu
 		double b = y2 - y1; //to do kwadratu
+		
+		
 		
 		double aPow = Math.pow(a, 2); //z tego
 		double bPow = Math.pow(b, 2); //plus z tego pierwiastek

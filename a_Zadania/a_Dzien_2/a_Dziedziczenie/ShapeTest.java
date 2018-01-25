@@ -13,9 +13,9 @@ public class ShapeTest {
 //		shape2.getDiscription();
 		
 		double distance = shape.getDistance(shape2);
-		System.out.println("OdlegÅ‚oÅ›Ä‡ Å›rodkÃ³w "+distance);
+		System.out.println("Odleg³oœæ œrodków "+distance);
 		
-		String list = "OdlegÅ‚oÅ›Ä‡ "+Double.toString(distance);
+		String list = "Odleg³oœæ œrodków "+Double.toString(distance);
 		
 		
 		
