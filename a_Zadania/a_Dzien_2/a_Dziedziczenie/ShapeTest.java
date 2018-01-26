@@ -20,6 +20,7 @@ public class ShapeTest {
 		
 		
 		shape.sAddHistory(list);
+		shape.printOperations();//nie robi³em operacji na kalkulatorze to nie ma niz zapisane.
 		shape.sPrintOperations();
 		shape.sClearList();
 	}
