@@ -29,5 +29,44 @@ public class Book {
 		this.additionalAuthors = additionalAuthors;
 		
 	}
+
+	public int getId() {
+		return id;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public boolean isAvaible() {
+		return avaible;
+	}
+
+	public void setAvaible(boolean avaible) {
+		this.avaible = avaible;
+	}
+
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
+	public Author[] getAdditionalAuthors() {
+		return additionalAuthors;
+	}
+
+	public void setAdditionalAuthors(Author[] additionalAuthors) {
+		this.additionalAuthors = additionalAuthors;
+	}
+	
+	
 	
 }
