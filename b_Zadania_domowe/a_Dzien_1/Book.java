@@ -8,6 +8,7 @@ public class Book {
 	private boolean avaible = true;
 	private Author author;
 	private Author [] additionalAuthors;
+	private User user;
 	
 	public Book (int id, String title) {
 		this.id = id;
@@ -28,6 +29,11 @@ public class Book {
 		this.author = author;
 		this.additionalAuthors = additionalAuthors;
 		
+	}
+	
+	void borrowTo(User user) {
+		this.avaible = false;
+		user.books.add(this);
 	}
 
 	public int getId() {
@@ -65,6 +71,14 @@ public class Book {
 
 	public void setAdditionalAuthors(Author[] additionalAuthors) {
 		this.additionalAuthors = additionalAuthors;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
 	
