@@ -1,6 +1,6 @@
 package b_Zadania_domowe.a_Dzien_1;
 
-public class Author {
+public class Author {//móg³by dziedziczyæ po Userze
 	private int id;
 	private String firstName;
 	private String lastName;
