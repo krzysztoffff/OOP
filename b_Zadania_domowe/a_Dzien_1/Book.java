@@ -21,4 +21,13 @@ public class Book {
 		this.author = author;
 	}
 	
+	public Book (int id, String title, Author author, Author [] additionalAuthors){
+		
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.additionalAuthors = additionalAuthors;
+		
+	}
+	
 }
