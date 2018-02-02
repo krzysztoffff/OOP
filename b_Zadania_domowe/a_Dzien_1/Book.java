@@ -1,45 +1,56 @@
 package b_Zadania_domowe.a_Dzien_1;
 
-
 public class Book {
-	
+
 	private int id;
 	private String title;
 	private boolean avaible = true;
 	private Author author;
-	private Author [] additionalAuthors;
+	private Author[] additionalAuthors;
 	private User user;
-	
-	public Book (int id, String title) {
+
+	public Book(int id, String title) {
 		this.id = id;
 		this.title = title;
-		
+
 	}
-	
-	public Book (int id, String title, Author author) {
+
+	public Book(int id, String title, Author author) {
 		this.id = id;
 		this.title = title;
 		this.author = author;
 	}
-	
-	public Book (int id, String title, Author author, Author [] additionalAuthors){
-		
+
+	public Book(int id, String title, Author author, Author[] additionalAuthors) {
+
 		this.id = id;
 		this.title = title;
 		this.author = author;
 		this.additionalAuthors = additionalAuthors;
-		
+
 	}
-	
+
 	void borrowTo(User user) {
 		this.avaible = false;
-		user.books.add(this);
+		boolean borrowed = false;
+		for (int i = 0; i < user.books.length; i++) {
+			if (user.books[i] == null) {
+				user.books[i] = this;
+				borrowed = true;
+				break;
+			}
+		}
+		if (borrowed == true)
+			System.out.println("Wypo¿yczono ksi¹¿kê");
+		else
+			System.out.println("User przekroczy³ limit wypo¿yczonych ksi¹¿ek");
+
+		// user.books.add(this); //spróbujemy tablic¹
 	}
 
 	public int getId() {
 		return id;
 	}
-
 
 	public String getTitle() {
 		return title;
@@ -80,7 +91,5 @@ public class Book {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
-	
-	
+
 }
