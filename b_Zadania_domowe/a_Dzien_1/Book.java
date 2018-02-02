@@ -45,7 +45,7 @@ public class Book {
 		else
 			System.out.println("User przekroczy³ limit wypo¿yczonych ksi¹¿ek");
 
-		// user.books.add(this); //spróbujemy tablic¹
+		// user.books.add(this); //lepiej zrobiæ list¹ ale robiê tablic¹. Ograniczam iloœæ wypo¿yczanych ksi¹¿ek dla Usera
 	}
 
 	public int getId() {
