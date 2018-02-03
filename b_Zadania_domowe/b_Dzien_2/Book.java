@@ -8,6 +8,7 @@ public class Book {
 	private Author author;
 	private Author[] additionalAuthors;
 	private User user;
+	private int popularity;
 
 	public Book(int id, String title) {
 		this.id = id;
@@ -36,6 +37,7 @@ public class Book {
 		for (int i = 0; i < user.books.length; i++) {
 			if (user.books[i] == null) {
 				user.books[i] = this;
+				this.popularity += 1;
 				borrowed = true;
 				break;
 			}
@@ -46,6 +48,13 @@ public class Book {
 			System.out.println("User przekroczy³ limit wypo¿yczonych ksi¹¿ek");
 
 		// user.books.add(this); //lepiej zrobiæ list¹ ale robiê tablic¹. Ograniczam iloœæ wypo¿yczanych ksi¹¿ek dla Usera
+	}
+	
+	public boolean equals (Book book) {
+		boolean eq = false;
+		if (this.id == book.id)
+			eq = true;
+		return eq;
 	}
 
 	public int getId() {
