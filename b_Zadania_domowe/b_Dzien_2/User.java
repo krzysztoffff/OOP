@@ -10,8 +10,11 @@ public class User {
 	Book[] books = new Book[6];//User mo¿e wypo¿yczyæ max 6 ksi¹¿ek
 //	List<Book> books = new ArrayList<>();
 
-	public User(int id, String firstName, String lastName) {
-		this.id = id;
+	public User() {
+
+	}
+	
+	public User(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
