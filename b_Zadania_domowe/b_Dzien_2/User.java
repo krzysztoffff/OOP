@@ -32,6 +32,14 @@ public class User {
 
 	}
 
+	public void returnAllBooks() {
+		for (int i = 0; i < this.books.length; i++) {
+			this.books[i].setAvaible(true);
+			this.books[i] = null;
+
+		}
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
