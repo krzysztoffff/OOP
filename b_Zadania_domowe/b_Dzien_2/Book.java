@@ -9,6 +9,7 @@ public class Book {
 	private Author[] additionalAuthors;
 	private User user;
 	private int popularity;
+	private User currentUser;
 
 	public Book(int id, String title) {
 		this.id = id;
@@ -30,6 +31,8 @@ public class Book {
 		this.additionalAuthors = additionalAuthors;
 
 	}
+	
+	
 
 	void borrowTo(User user) {
 		this.avaible = false;
@@ -38,6 +41,7 @@ public class Book {
 			if (user.books[i] == null) {
 				user.books[i] = this;
 				this.popularity += 1;
+				this.currentUser = user;
 				borrowed = true;
 				break;
 			}
@@ -56,6 +60,8 @@ public class Book {
 			eq = true;
 		return eq;
 	}
+	
+	
 
 	public int getId() {
 		return id;

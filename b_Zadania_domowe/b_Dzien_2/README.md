@@ -15,7 +15,7 @@ Zmodyfikuj klasę `Book`:
 
 1. Dodaj prywatny atrybut `popularity` który będzie przechowywał ilość wypożyczeń, ilość ta powinna się zwiększać o 1 z każdym wypożyczeniem.
 2. Zdefiniuj metodę `equals(Book book)`, która na podstawie atrybutu `id` zwróci informacje czy obiekty są równe.
-3. Dodając atrybut `currentUser` - referencja do obiektu klasy `User`, który aktualnie wypożycza książkę, zmodyfikuj odpowiednio metodę `borrowTo` .
+-3. Dodając atrybut `currentUser` - referencja do obiektu klasy `User`, który aktualnie wypożycza książkę, zmodyfikuj odpowiednio metodę `borrowTo` .
 
 
 #### Zadanie 3

@@ -21,6 +21,17 @@ public class User {
 		this.lastName = lastName;
 	}
 
+	public void returnBook(Book book) {
+		for (int i = 0; i < this.books.length; i++) {
+			if (this.books[i].equals(book)) {
+				books[i] = null;
+				book.setAvaible(true);
+			}
+
+		}
+
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
