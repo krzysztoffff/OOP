@@ -61,6 +61,11 @@ public class Book {
 		return eq;
 	}
 	
+	public void returnBook() {
+		this.currentUser.returnBook(this);
+		
+	}
+	
 	
 
 	public int getId() {
