@@ -19,7 +19,7 @@ public class BMI {
 	}
 
 	public double calculateDouble() {
-		double heightInMeters = this.height * 100; //do obliczenia wzrost potrzebny jest w metrach
+		double heightInMeters = this.height / 100; //do obliczenia wzrost potrzebny jest w metrach
 		double res = Math.pow(this.weight / heightInMeters, 2);
 		
 		history.add(res);
