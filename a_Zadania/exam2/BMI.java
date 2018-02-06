@@ -1,12 +1,14 @@
 package a_Zadania.exam2;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class BMI {
 
-	private double weight;// podaj w kilogramach
-	private double height;// podaj w metrach
+	private double weight;// otrzymuje w kilogramach
+	private double height;// otrzymuje w centymetrach
 
 	public static List<Double> history = new ArrayList<>();
 
@@ -17,8 +19,24 @@ public class BMI {
 	}
 
 	public double calculateDouble() {
-		double res = Math.pow(this.weight / this.height, 2);
+		double heightInMeters = this.height * 100; //do obliczenia wzrost potrzebny jest w metrach
+		double res = Math.pow(this.weight / heightInMeters, 2);
+		
 		history.add(res);
+		return res;
+	}
+	
+	public double bmiAvg() {
+		double bmiSum = 0.0;
+		for(double bmi : history) {
+			bmiSum += bmi;
+		}
+		
+		double res = bmiSum / history.size();
+//		NumberFormat formatter = new DecimalFormat("#0.00"); 
+//		String formatedRes = formatter.format(res);
+//		double finalResult = Double.parseDouble(formatedRes);
+		
 		return res;
 	}
 

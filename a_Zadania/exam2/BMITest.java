@@ -15,6 +15,11 @@ public class BMITest {
 		
 		System.out.println(BMI.history.toString());
 		
+		System.out.println(bmi.bmiAvg());
+		System.out.println(bmi2.bmiAvg());
+		System.out.format("%.2f%n", bmi3.bmiAvg()); //ten sam wynik dla ka¿dego obiektu. history jest static  formatuje ale nie zaokr¹glam
+		
+		
 	}
 	
 }
