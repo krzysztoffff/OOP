@@ -52,6 +52,6 @@ public class Main1 {
 
 }
 
-class Main2 { // jest druga klasa ale w pliku mo¿e byætylko jedna klasa publiczna
+class Main2 { // jest druga klasa ale w pliku mo¿e byæ tylko jedna klasa publiczna
 	int x;
 }
