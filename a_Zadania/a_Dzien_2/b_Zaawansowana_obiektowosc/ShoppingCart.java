@@ -16,9 +16,11 @@ public class ShoppingCart {
 			throw new ArgumentError();
 
 	}
-	
+
 	public void removeProduct(int productId) {
-		
+
+		// TODO
+
 	}
 
 }
