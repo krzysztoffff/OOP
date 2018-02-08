@@ -54,7 +54,7 @@ Dzięki temu żaden z naszych produktów nie będzie miał takiego samego id.
 
 ### Zadanie 4
 
-1. Napisz klasę `ShoppingCart`. Klasa ta ma posiadać następujące atrybuty:
+1. Napisz klasę `Shopp	ingCart`. Klasa ta ma posiadać następujące atrybuty:
   * `products` - tablica z obiektami klasy `Product`.
 
 Do tej zmiennej nie powinno być ustawionych getterów, ani setterów.
