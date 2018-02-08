@@ -1,34 +1,36 @@
 package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
 
-
 public class Product {
-	
+
 	private int id;
 	private String name;
 	private String description;
 	private double price;
 	private int quantity;
-	
+
 	public Product() {
-		
+
 	}
 
-	public Product(int id, String name, String description, double price, int quantity) {
+	public Product(String name, String description, double price, int quantity) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.quantity = quantity;
 	}
 
+	public double getTotalSum() {
+		return this.quantity * this.price;
+	}
+
 	public int getId() {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
+	// public void setId(int id) {
+	// this.id = id;
+	// }
 
 	public String getName() {
 		return name;
@@ -51,7 +53,8 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		if (price > 0.01)
+			this.price = price;
 	}
 
 	public int getQuantity() {
@@ -59,12 +62,8 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+		if (quantity > 0)
+			this.quantity = quantity;
 	}
-	
-	
-	
-	
-	
-	
+
 }
