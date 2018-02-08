@@ -46,7 +46,7 @@ Zmienna ta będzie trzymała id ktore zostanie nadane następnemu stworzonemu pr
 ```
 //w konstruktorze
     this.id = nextId;
-    this.nextId++;
+    this.nextId++; //nie thisbo static.
 
 ```
 

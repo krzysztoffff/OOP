@@ -1,7 +1,7 @@
 package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
 
 public class Product {
-
+	private static int nextId = 0;
 	private int id;
 	private String name;
 	private String description;
@@ -14,6 +14,8 @@ public class Product {
 
 	public Product(String name, String description, double price, int quantity) {
 		super();
+		this.id = nextId;
+		nextId ++;
 		this.name = name;
 		this.description = description;
 		this.price = price;
