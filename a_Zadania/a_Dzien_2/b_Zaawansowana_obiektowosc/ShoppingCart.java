@@ -39,11 +39,12 @@ public class ShoppingCart {
 	public void printReceipt() {
 		double sum = 0.0;
 		for (Product p : this.products) {
-			System.out.println(
-					"Produkt " + p.getId() + ", " + p.getQuantity() + "x" + p.getPrice() + " = " + p.getTotalSum());
+			System.out.print("Produkt " + p.getId() + ", " + p.getQuantity() + "x" + p.getPrice() + " = ");
+			System.out.format("%.2f%n", p.getTotalSum());
 			sum += p.getTotalSum();
 		}
-		System.out.println("Suma:\n" + sum);
+		System.out.print("Suma:\n");
+		System.out.format("%.2f%n", sum);
 
 	}
 
