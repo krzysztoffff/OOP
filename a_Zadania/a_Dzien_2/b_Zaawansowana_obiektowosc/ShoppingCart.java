@@ -19,7 +19,20 @@ public class ShoppingCart {
 
 	public void removeProduct(int productId) {
 
-		// TODO
+		for (int i = 0; i < this.products.size(); i++) {
+			if (this.products.get(i).getId() == productId) {
+				this.products.remove(i);
+			}
+		}
+
+	}
+
+	public void changeProductQuantity(int productId, int newQuantity) {
+		for (int i = 0; i < this.products.size(); i++) {
+			if (this.products.get(i).getId() == productId) {
+				this.products.get(i).setQuantity(newQuantity);
+			}
+		}
 
 	}
 

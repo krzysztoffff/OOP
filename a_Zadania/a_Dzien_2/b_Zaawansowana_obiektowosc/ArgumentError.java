@@ -4,6 +4,7 @@ public class ArgumentError extends IllegalArgumentException {
 	
 	
 	public ArgumentError() {
+		super();
 		System.out.println("Obiekt nie jest produktem");
 	}
 
