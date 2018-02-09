@@ -7,6 +7,7 @@ public class Product {
 	private String description;
 	private double price;
 	private int quantity;
+	private String isDiscount = "";
 
 	public Product() {
 
@@ -15,7 +16,7 @@ public class Product {
 	public Product(String name, String description, double price, int quantity) {
 		super();
 		this.id = nextId;
-		nextId ++;
+		nextId++;
 		this.name = name;
 		this.description = description;
 		this.price = price;
@@ -23,6 +24,7 @@ public class Product {
 	}
 
 	public double getTotalSum() {
+
 		return this.quantity * this.price;
 	}
 
@@ -66,6 +68,14 @@ public class Product {
 	public void setQuantity(int quantity) {
 		if (quantity > 0)
 			this.quantity = quantity;
+	}
+
+	public String getIsDiscount() {
+		return isDiscount;
+	}
+
+	public void setIsDiscount(String isDiscount) {
+		this.isDiscount = isDiscount;
 	}
 
 }
