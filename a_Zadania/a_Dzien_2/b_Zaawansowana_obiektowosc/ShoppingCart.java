@@ -36,4 +36,15 @@ public class ShoppingCart {
 
 	}
 
+	public void printReceipt() {
+		double sum = 0.0;
+		for (Product p : this.products) {
+			System.out.println(
+					"Produkt " + p.getId() + ", " + p.getQuantity() + "x" + p.getPrice() + " = " + p.getTotalSum());
+			sum += p.getTotalSum();
+		}
+		System.out.println("Suma:\n" + sum);
+
+	}
+
 }

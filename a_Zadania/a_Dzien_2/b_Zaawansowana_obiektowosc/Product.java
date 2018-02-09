@@ -1,7 +1,7 @@
 package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
 
 public class Product {
-	private static int nextId = 0;
+	private static int nextId = 1;
 	private int id;
 	private String name;
 	private String description;
