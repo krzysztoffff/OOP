@@ -1,17 +1,17 @@
 package dziedziczenie;
 
-public class Zombie extends Monster {
+public class Skeleton extends Monster {
 	private String weapon;
 
-	public Zombie() {
-		System.out.println("konstruktor domyœlny klasy Zombie");
+	public Skeleton() {
+		System.out.println("konstruktor domyœlny klasy Skeleton");
 	}
 
-	public Zombie(int hp, int speed, String weapon) {
+	public Skeleton(int hp, int speed, String weapon) {
 		super(hp, speed);
-		super.setName("Zombie");
+		super.setName("Skeleton");
 		this.weapon = weapon;
-		System.out.println("konstruktor niedomyœlny klasy Zombie");
+		System.out.println("konstruktor niedomyœlny klasy Skeleton");
 	}
 
 	public String getWeapon() {
@@ -22,6 +22,7 @@ public class Zombie extends Monster {
 		this.weapon = weapon;
 	}
 
+	
 	@Override
 	public void attack() {
 		System.out.println(this.name + " Atakuje");
